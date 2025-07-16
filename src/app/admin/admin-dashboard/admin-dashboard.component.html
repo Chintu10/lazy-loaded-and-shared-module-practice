@@ -1,1 +1,16 @@
-<p>admin-dashboard works!</p>
+<div style="border: 2px solid red;">
+    <p>Lazy loaded Module's Parent component admin-dashboard works! and below are the child routes</p>
+
+
+    <div style="display: flex;">
+        <!-- Sidebar stays static -->
+        <app-admin-sidebar></app-admin-sidebar>
+
+        <!-- Child views load here -->
+        <div style="margin-left: 1rem; padding: 1rem; border-left: 1px solid #df0e0e;">
+            router outlet 
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>
