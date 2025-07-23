@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-dashboard.component.css']
 })
 export class AdminDashboardComponent implements OnInit {
+  public sidebarValue: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleSideBarInput(value: string): void {
+    this.sidebarValue = value;
   }
 
 }

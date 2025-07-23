@@ -1,14 +1,15 @@
 <div style="border: 2px solid red;">
     <p>Lazy loaded Module's Parent <b>Admin-Dashboard component</b> works! and below are the child routes</p>
-
+    <h4 *ngIf="!sidebarValue">Waiting for input...</h4>
+    <h3 *ngIf="sidebarValue">Sidebar Typed Value: {{ sidebarValue }}</h3>
 
     <div style="display: flex;">
         <!-- Sidebar stays static -->
-        <app-admin-sidebar></app-admin-sidebar>
+        <app-admin-sidebar (inputChanged)="handleSideBarInput($event)"></app-admin-sidebar>
 
         <!-- Child views load here -->
         <div style="margin-left: 1rem; padding: 1rem; border-left: 1px solid #df0e0e;">
-            router outlet 
+            router outlet
             <router-outlet></router-outlet>
         </div>
     </div>
