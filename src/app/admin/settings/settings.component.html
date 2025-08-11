@@ -1,3 +1,4 @@
 <p>⚙️ Admin Settings Page</p>
-<input type="text" [(ngModel)]="name" placeholder="Two way binding Ex" />
+<input type="text" [(ngModel)]="name" placeholder="2 way binding Ex" />
+<input type="text" (input)="onInputChange($event)" placeholder="2 way binding using Func Ex" />
 <div> {{name}}</div>
