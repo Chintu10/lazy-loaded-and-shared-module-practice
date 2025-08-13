@@ -7,6 +7,7 @@ import { UsersComponent } from './users/users.component';
 import { SettingsComponent } from './settings/settings.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { FormsModule } from '@angular/forms';
+import { AdminService } from './services/admin.service';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     AdminRoutingModule,
     FormsModule
-  ]
+  ],
+  providers: [AdminService]
 })
 export class AdminModule { }

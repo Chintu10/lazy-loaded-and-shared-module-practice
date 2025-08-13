@@ -2,3 +2,12 @@
 <input type="text" [(ngModel)]="name" placeholder="2 way binding Ex" />
 <input type="text" (input)="onInputChange($event)" placeholder="2 way binding using Func Ex" />
 <div> {{name}}</div>
+
+
+----------------------
+<input [(ngModel)]="settingText" (ngModelChange)="onValueChange()" placeholder="Type setting..." />
+
+<p>Current Setting Value: {{ settingText }}</p>
+
+<!-- This button changes value in component, which updates UI automatically -->
+<button (click)="resetToDefault()">Reset to Default</button>
