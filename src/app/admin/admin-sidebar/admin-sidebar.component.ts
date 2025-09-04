@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-admin-sidebar',
@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AdminSidebarComponent implements OnInit {
   @Output() inputChanged = new EventEmitter<string>();
+  @Input() childproduct: any;
 
   constructor() { }
 
@@ -18,5 +19,9 @@ export class AdminSidebarComponent implements OnInit {
     this.inputChanged.emit(inputElement.value);
   }
 
+  changeName() {
+    // Directly mutating parent's object reference
+    this.childproduct.name = 'Smartphone';  
+  }
 
 }

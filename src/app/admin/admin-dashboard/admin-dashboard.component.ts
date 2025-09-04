@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminDashboardComponent implements OnInit {
   public sidebarValue: string = '';
+  public product: any;
 
   constructor() { }
-
+ 
   ngOnInit(): void {
+     this.product = {name: 'Mobile'};
   }
 
   handleSideBarInput(value: string): void {

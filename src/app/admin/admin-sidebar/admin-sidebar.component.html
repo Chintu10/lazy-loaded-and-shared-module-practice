@@ -1,5 +1,5 @@
 <div class="admin-sidebar-fill">
-    <h3>Inside Admin-Dashboard.html, we have this sidebar component 'selector' , where we added all admin Module's children component based on routerLink</h3>
+    <h3>Inside Admin-Dashboard.html, we have this sidebar component 'selector' with green border  , where we added all admin Module's children component based on routerLink</h3>
     <nav class="admin-sidebar">
         <ul>
             <li><a routerLink="/admin/users" routerLinkActive="active">Users</a></li>
@@ -7,4 +7,7 @@
         </ul>
     </nav>
     <input type="text" (keyup)="OnkeyUp($event)" placeholder="@Output example" />
+    <h3>Ex:directly mutating @Input in the child affects the parent.</h3>
+    <p>Product Name in Child: {{ childproduct.name }}</p>
+    <button (click)="changeName()">Change Name in Child</button>
 </div>
