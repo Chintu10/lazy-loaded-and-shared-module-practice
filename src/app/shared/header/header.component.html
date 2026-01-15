@@ -1,0 +1,14 @@
+<div style="border: 2px solid rgb(92, 122, 10);">
+    <p>shares Module's header component works!</p>
+    <h2>{{ title }}</h2>
+    <span class="image">
+        <span class="image-text">Property Binded Logo
+            <img [src]="image" alt="Angular Logo" />
+            <button [attr.title]="title">Attribute binded 'title'</button>
+        </span>
+    </span>
+    <div [ngClass]="isMobile ? 'mobile-view' : 'desktop-view'">
+        This layout is {{ isMobile ? 'Mobile' : 'Desktop' }}.
+    </div>
+
+</div>
