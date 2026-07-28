@@ -1,0 +1,22 @@
+Act as a Senior ASP.NET Core Architect.
+
+Analyze the current solution and provide a comprehensive technical overview of the project.
+
+Please cover the following:
+
+1. Explain the overall architecture of the application.
+2. Describe the purpose of each layer (Controllers, Services, Repositories, Middleware, etc.).
+3. Explain how requests flow through the application from the client to the downstream systems.
+4. List the ASP.NET Core features and design patterns used in this project.
+5. Identify all external services or APIs consumed by the application and explain how they are integrated.
+6. Explain the responsibilities of the Repository layer. Does it access a database directly, or does it communicate with external APIs?
+7. Describe how dependency injection is implemented throughout the project.
+8. Explain how configuration, logging, exception handling, authentication, authorization, and validation are implemented.
+9. List all important NuGet packages, frameworks, and libraries used in the solution and explain their purpose.
+10. Identify whether the project directly interacts with any database technologies (Entity Framework, Dapper, SQL Server, MongoDB, etc.). If not, explain how data is retrieved and processed.
+11. Explain how API responses are transformed, aggregated, validated, or enriched before being returned to the client.
+12. Describe the coding standards, architectural principles, and best practices followed throughout the project.
+13. Identify any performance optimizations, reusable components, middleware, utilities, or helper classes implemented in the project.
+14. Summarize the key backend technologies and concepts demonstrated by this codebase.
+
+Where possible, include references to the relevant files or folders so I can better understand the implementation.
